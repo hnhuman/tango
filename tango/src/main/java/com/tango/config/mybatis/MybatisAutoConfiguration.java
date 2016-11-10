@@ -73,25 +73,6 @@ public class MybatisAutoConfiguration {
                             + "configuration)");
         }
     }
-
-/*    @Bean(name = "sqlSessionFactory")
-    @ConditionalOnMissingBean
-    public SqlSessionFactory sqlSessionFactory(DataSource dataSource) throws Exception {
-        SqlSessionFactoryBean factory = new SqlSessionFactoryBean();
-        factory.setDataSource(dataSource);
-        if (StringUtils.hasText(this.properties.getConfig())) {
-            factory.setConfigLocation(
-                    this.resourceLoader.getResource(this.properties.getConfig()));
-        } else {
-            if (this.interceptors != null && this.interceptors.length > 0) {
-                factory.setPlugins(this.interceptors);
-            }
-            factory.setTypeAliasesPackage(this.properties.getTypeAliasesPackage());
-            factory.setTypeHandlersPackage(this.properties.getTypeHandlersPackage());
-            factory.setMapperLocations(this.properties.getMapperLocations());
-        }
-        return factory.getObject();
-    }*/
     
     @Bean(name = "sqlSessionFactory")
     @ConditionalOnMissingBean
@@ -114,7 +95,7 @@ public class MybatisAutoConfiguration {
 		pageHelper.setProperties(properties);
 		plugins.add(pageHelper);
 		sqlSessionFactoryBean.setPlugins(plugins.toArray(new Interceptor[] {}));
-		Resource[] resources = new PathMatchingResourcePatternResolver().getResources("classpath:mapper/*.xml");
+		Resource[] resources = new PathMatchingResourcePatternResolver().getResources("classpath:mappers/*.xml");
 		sqlSessionFactoryBean.setMapperLocations(resources);
 		return sqlSessionFactoryBean;
 	}
