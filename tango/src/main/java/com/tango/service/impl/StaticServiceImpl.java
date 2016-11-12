@@ -78,7 +78,7 @@ public class StaticServiceImpl implements StaticService , ServletContextAware {
 		}
 		delete(itemVo);
 		Map<String, Object> model = new HashMap<String, Object>();
-		model.put("itemVo", itemVo);
+		model.put("item", itemVo);
 		return generate("/shop/item/content.ftl", itemVo.getUrl(), model);
 	}
 	
