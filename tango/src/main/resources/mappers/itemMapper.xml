@@ -1,4 +1,30 @@
 <?xml version="1.0" encoding="UTF-8" ?>
 <!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd" >
 <mapper namespace="com.tango.dao.ItemDao" >
+	<resultMap type="com.tango.model.vo.ItemVo" id="itemVo">
+		<id column="id" property="id"/>
+		<result column="introduction" property="introduction"/>
+		<result column="max_price" property="maxPrice"/>
+		<result column="select_price" property="selectPrice"/>
+		<result column="price" property="price"/>
+		<result column="sub_title" property="subTitle"/>
+		<result column="title" property="title"/>
+		<result column="total" property="total"/>
+		<result column="url" property="url"/>
+	</resultMap>
+	
+	<select id="findPage" resultMap="itemVo">
+		SELECT
+			ti.id,
+			ti.title,
+			ti.sub_title,
+			ti.url,
+			ti.total,
+			ti.price,
+			ti.select_price,
+			ti.max_price,
+			ti.introduction
+		FROM
+			tango_item ti
+	</select>
 </mapper>
