@@ -1,25 +1,18 @@
-
-
-
 <!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
 <html xmlns="http://www.w3.org/1999/xhtml">
-<head id="htmlHead"><meta http-equiv="Content-Type" content="text/html; charset=utf-8" /><title>
-	索尼（SONY）【新PS4国行主机】新PlayStation 4 上市纪念游戏主机套装 1TB 黑色 索尼（SONY）【新PS4国行主机】新PlayStation 4 上市纪念游戏主机套装 1TB 黑色_1元云购
-</title><meta name="Description" content="新款轻薄版，无线控制器，沿袭产品历代DNA，更人性化的功能！" />
-<meta name="keywords" content="电玩,索尼,SONY,PS4国行主机,PS4 slim,游戏机,索尼PS4游戏机,索尼 PS4 游戏机,家用游戏机,PS4,PlayStation 4,索尼游戏主机,索尼 PS4 国行主机,索尼PS4国行主机,PS4 slim游戏机,PS4 slim 游戏机," />
-<link rel="stylesheet" type="text/css" href="http://skin.1yyg.com/css/header.css?v=160727" />
-         <!--[if IE 6]>
-           <script type="text/javascript" src="http://skin.1yyg.com/js/iepng.js"></script> 
-           <script type="text/javascript">
-             EvPNG.fix('.search a.seaIcon i,.m-menu-all h3 em,.nav-cart-btn i.f-cart-icon,a.u-cart s,.u-mui-tab a.u-menus s,.u-mui-tab li.f-cart a.u-menus i,.u-mui-tab li.f-both-top a.u-menus,.u-mui-tab li.f-both-bottom a.u-menus,.i-ctrl a s,.g-list li cite,.f-list-sorts li.m-value s,.nav-main li.f-nav-thanks span,.u-float-list a i,.cartEmpty i,.transparent-png');
-           </script>
-         <![endif]--><link rel="stylesheet" type="text/css" href="http://skin.1yyg.com/CSS/GoodsDetail.css?v=160718" />
-    <script language="javascript" type="text/javascript" src="http://skin.1yyg.com/JS/JQuery1.12.js"></script>
-    <script id="pageJS" language="javascript" type="text/javascript" data="http://skin.1yyg.com/JS/GoodsDetail.js"></script>
+<head id="htmlHead">
+	<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+	<title>${item.title} ${item.subTitle} 糖果购</title>
+	<meta name="Description" content="${item.title}" />
+	<meta name="keywords" content="${item.subTitle}" />
+	<link rel="stylesheet" type="text/css" href="/resources/shop/css/header.css?v=160727" />
+    <link rel="stylesheet" type="text/css" href="/resources/shop/css/GoodsDetail.css" />
+    <script language="javascript" type="text/javascript" src="/resources/shop/js/JQuery1.12.js"></script>
+    <script id="pageJS" language="javascript" type="text/javascript" data="/resources/shop/js/GoodsDetail.js"></script>
 </head>
 <body id="loadingPicBlock" rf="2">
 
-                   <!--顶部-->
+               <!--顶部-->
                <div class="g-toolbar clrfix">
                    <div class="w1190">
                        <ul class="fl">
@@ -933,10 +926,6 @@
              function GetVerNum() { var D = new Date(); return D.getFullYear().toString().substring(2, 4) + '.' + (D.getMonth() + 1) + '.' + D.getDate() + '.' + D.getHours() + '.' + (D.getMinutes() < 10 ? '0' : D.getMinutes().toString().substring(0, 1)) }
              Base.getScript('http://skin.1yyg.com/JS/Bottom.js?v=' + GetVerNum());
           </script>
-          <div style="display: none;">
-             <script type="text/javascript" language="JavaScript" src="http://s22.cnzz.com/stat.php?id=3362429&web_id=3362429"  async="async"></script>
-          </div>
-
 </body>
 </html>
 ${systemName}
