@@ -18,4 +18,6 @@ ${item.total}
 
 ${item.url}
 
+${item.periods}
+
 ${item.introduction}

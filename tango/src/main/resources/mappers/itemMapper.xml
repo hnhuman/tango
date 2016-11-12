@@ -11,6 +11,7 @@
 		<result column="title" property="title"/>
 		<result column="total" property="total"/>
 		<result column="url" property="url"/>
+		<result column="periods" property="periods"/>
 	</resultMap>
 	
 	<select id="findPage" resultMap="itemVo">
@@ -23,7 +24,8 @@
 			ti.price,
 			ti.select_price,
 			ti.max_price,
-			ti.introduction
+			ti.introduction,
+			ti.periods
 		FROM
 			tango_item ti
 	</select>

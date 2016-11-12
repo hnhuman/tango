@@ -1,12 +1,15 @@
 package com.tango.model.vo;
 
 import java.math.BigDecimal;
+import java.math.BigInteger;
 
 public class ItemVo {
 
 	private String id;
 
 	private String introduction;
+	
+	private String periods;
 
 	private BigDecimal maxPrice;
 	
@@ -92,6 +95,14 @@ public class ItemVo {
 
 	public void setUrl(String url) {
 		this.url = url;
+	}
+
+	public String getPeriods() {
+		return periods;
+	}
+
+	public void setPeriods(String periods) {
+		this.periods = periods;
 	}
 	
 }
